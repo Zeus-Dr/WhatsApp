@@ -18,6 +18,7 @@ class MainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        bottom:TabBar(tabs:[])
         leading: Icon(Icons.person),
         title: Text("Chats"),
         actions: [
@@ -62,7 +63,7 @@ class MainWidget extends StatelessWidget {
       dense: true,
       minLeadingWidth: 12.0,
       leading: CircleAvatar(
-        child: Text("AW"),
+        child: Icon(Icons.favorite),
       ),
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
